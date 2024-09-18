@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: white;
+    /* da para usar background-image, mas com as seguintes tags apos ele:
+    background-attachment: fixed -> para que o background não se mova
+    background-size: cover -> para que o background ocupe toda a tela
+    background-position: center -> para alinhar o background */
+}
+
+.flex{
+    display: flex; /* Vai usar essa class numa div para deixar os conteudos lado a lado*/
+    justify-content: center;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    width: 100%;
+    background-color: #100416;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul{ /* o > significa que eu estou querendo acessar o item dentro do outro, no caso: o UL, que está dentro do NAV */
+    display: flex;
+}
+
+.titulo{
+    color: whitesmoke;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    line-height: 60px;
+    margin-left: 1rem;
+}
+
+.imagem_index{
+    width: 50%;
+    height: auto;
+    margin: 3px;
+}
+
+.links{
+    color: whitesmoke;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin: 0 1rem;
+}
+
+.conteudo{
+    margin: 2rem;
+}
+
+table{
+    width: 100%; /* Vai ocupar todo o espaço dentro da div conteudo */
+}
+
+table, th, td{
+    border: 1px solid black;
+    font-size: 13pt;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border-collapse: collapse; /* Vai retirar o espaço entre as bordas, que é padrão dentro de uma table*/
+    padding: 10px;
+}
+
+th{
+    color: #fff;
+    background-color: #100416;
+}
+
+/* Para fazer linhas alternadas abaixo: */
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor para linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Cor para linhas ímpares */
+}
+
+tr:hover{
+    background-color: #d3d3d3;
+}
+
+.caixa-informacoes{
+    padding: 2rem;
+    width: auto;
+    height: auto; /* deixar esses tamanhos automaticos vai facilitar para quando for adicionar textos e outros elementos dentro da caixa, ela ira se adaptar */
+    background-color: #100416;
+    color: #fff;
+    font-size: 13pt;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin-right: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.596);
+}
+
+h1{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    margin: 40px;
+}
+
+.imagens{
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.imagem{
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+iframe{
+    border-radius: 8px; /* Arredondar as bordas */
+    margin: 0.5rem;
+    border: none;
+}
